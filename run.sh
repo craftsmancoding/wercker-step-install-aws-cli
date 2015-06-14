@@ -21,6 +21,12 @@ sudo apt-get update
 echo 'Installing Unzip...'
 sudo apt-get install unzip -y
 
+echo 'Grabbing wget...'
+sudo apt-get install wget -y
+
+echo 'Grabbing ntpdate...'
+sudo apt-get install ntpdate -y
+
 echo 'Grabbing AWS CLI...'
 wget https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
 unzip awscli-bundle.zip
