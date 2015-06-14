@@ -1,6 +1,7 @@
 # ALL YOUR BOX ARE BELONG TO US!
-# The wercker/default no longer seems to be a valid box.
-box: debian
+# The wercker/default no longer seems to be a valid box... wtf?
+box: wercker/default
 build:
-  steps:
-    - wercker/validate-wercker-step@0.0.3
+    steps:
+        - shellcheck:
+            files: run.sh
