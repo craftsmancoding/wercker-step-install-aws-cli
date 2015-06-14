@@ -3,4 +3,4 @@
 box: debian
 build:
   steps:
-    - validate-wercker-step
+    - wercker/validate-wercker-step@0.0.3
